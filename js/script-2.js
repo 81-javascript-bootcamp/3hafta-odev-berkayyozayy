@@ -95,7 +95,7 @@ const petsModule = (function () {
           const soundEl = document.getElementById(dataSoundId);
           if (soundEl) soundEl.play();
         }
-      }      
+      }
     });
   };
 
@@ -108,17 +108,18 @@ const petsModule = (function () {
       });
     }
     $rows.forEach((row, i) => {
-      if (i > 0) { // don t change background of head
-        row.addEventListener('click', () => {
+      if (i > 0) {
+        // don t change background of head
+        row.addEventListener("click", () => {
           $rows.forEach((row) => {
-            if (row.classList.contains('row-selected-bg')) {
-              row.classList.remove('row-selected-bg')
+            if (row.classList.contains("row-selected-bg")) {
+              row.classList.remove("row-selected-bg");
             }
-          })
-          row.classList.add('row-selected-bg')
-        })
+          });
+          row.classList.add("row-selected-bg");
+        });
       }
-    })
+    });
   };
 
   const bindEvents = function () {
