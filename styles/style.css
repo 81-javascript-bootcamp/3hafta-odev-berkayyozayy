@@ -11,3 +11,7 @@ body {
     width: 30px;
     height: 30px;
 }
+
+.row-selected-bg {
+    background-color:  #e6f9ff;
+}
