@@ -104,7 +104,6 @@ const petsModule = (function () {
     for (const row of $rows) {
       row.addEventListener("click", () => {
         const $img = row.querySelector("img");
-        // console.log($img);
         $mainImage.src = $img.src;
       });
     }
